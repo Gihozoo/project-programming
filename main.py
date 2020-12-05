@@ -121,7 +121,7 @@ while cont != "n":
         f = open(Username + ".txt", "a+")
 
         # writing in the file
-        f.write("The user enters their name" + Username + "\n")
+        f.write("The user enters their name: " + Username + "\n")
 
         print("\nWelcome Kenny ---- Business account")
         print("\nSelect the operation you want to make:")

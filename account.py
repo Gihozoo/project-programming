@@ -35,7 +35,7 @@ class Account:
             print("Wrong choice, try again!")
             option = int(input("\nYour choice: "))
         # writing in the file
-        f.write(str(option) + "\n")
+        f.write("The user enters the choice of what they want to buy: " + str(option) + "\n")
 
         if option == 1:
             print("\nYou are buying Cashpower ----")
@@ -51,8 +51,8 @@ class Account:
                 amount = int(input("Amount: "))
 
             # writing in the file
-            f.write(str(cash_power_number) + "\n")
-            f.write(str(amount) + "\n")
+            f.write("The user enters the cash power number: " + str(cash_power_number) + "\n")
+            f.write("The user enters the amount of money they want to use: " + str(amount) + "\n")
 
             Try_again = False
             if (self.balance - amount) < 1000:
@@ -77,7 +77,7 @@ class Account:
                 password = int(input("\nInput your password to confirm: "))
 
             # writing in the file
-            f.write(str(password) + "\n")
+            f.write("The user enters their password: " + str(password) + "\n")
 
             if password == self.password:
                 self.balance -= amount
@@ -97,7 +97,7 @@ class Account:
                 p_choice = int(input("\nChoose: "))
 
             # writing in the file
-            f.write(str(p_choice) + "\n")
+            f.write("The user enters the choice of what they want to buy: " + str(p_choice) + "\n")
 
             pnbr = 0
             if p_choice == 1:
@@ -111,7 +111,7 @@ class Account:
                     phone_number = int(input("\nYour phone number: "))
 
                 # writing in the file
-                f.write(str(phone_number) + "\n")
+                f.write("The user enters the phone number: " + str(phone_number) + "\n")
 
                 pnbr = pnbr + phone_number
             try:
@@ -121,7 +121,7 @@ class Account:
                 amount = int(input("Amount: "))
 
             # writing in the file
-            f.write(str(amount) + "\n")
+            f.write("The user enters the amount they waant to use: " + str(amount) + "\n")
 
             Try_again = False
             if (self.balance - amount) < 1000:
@@ -132,7 +132,7 @@ class Account:
                 amount = int(input("Try another amount: "))
 
                 # writing in the file
-                f.write(str(amount) + "\n")
+                f.write("The user enters the amount they waant to use: " + str(amount) + "\n")
 
                 if (self.balance - amount) > 1000:
                     break
@@ -147,7 +147,7 @@ class Account:
                 password = int(raw_input("\nInput your password to confirm: "))
 
             # writing in the file
-            f.write(str(password) + "\n")
+            f.write("The user enters their password: " + str(password) + "\n")
 
             if password == self.password:
                 self.balance -= amount
@@ -188,7 +188,7 @@ class Account:
         print("\nYour New Balance is", self.balance, "\n")
 
         # writing in the file
-        f.write(str(amount) + "\n")
+        f.write("The user enters the amount they waant to use: " + str(amount) + "\n")
 
 
 
